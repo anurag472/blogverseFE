@@ -10,7 +10,7 @@ export default function AddBlog() {
   });
   const postBlog = async () => {
     try {
-      await axios.post("http://localhost:5000/create", formData);
+      await axios.post("http://blogapi.anurag47.me/create", formData);
     } catch (error) {
       console.error(error);
     }

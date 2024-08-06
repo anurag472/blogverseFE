@@ -8,7 +8,7 @@ export default function FullBlog() {
   const getBlog = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/blogs?search=${decodeURIComponent(blogName)}`
+        `http://blogapi.anurag47.me/blogs?search=${decodeURIComponent(blogName)}`
       );
       setBlog(response.data[0]);
     } catch (error) {

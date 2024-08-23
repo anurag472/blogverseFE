@@ -17,7 +17,7 @@ function Blogs() {
     try {
       setIsLoading(true);
       const response = await axios.get(
-        `http://blogapi.anurag47.me/blogs?page=${currentPage}&search=${searchInput}`
+        `https://blogapi.anurag47.me/blogs?page=${currentPage}&search=${searchInput}`
       );
       setBlogs(response.data);
       setIsLoading(false);
